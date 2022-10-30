@@ -7,12 +7,12 @@ pipeline{
     stages{
       stage('install httpd'){
            steps{
-                sh"yum install httpd -y"
+                sh"sudo yum install httpd -y"
 }
 }
       stage('start httpd'){
         steps{
-         sh"service httpd start"
+         sh"sudo service httpd start"
 }
 }
       stage('deploy httpd'){
