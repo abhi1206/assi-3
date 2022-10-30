@@ -17,7 +17,7 @@ pipeline{
 }
       stage('deploy httpd'){
         steps{
-          sh"copy index.html /var/www/html"
+          sh"cp -r index.html /var/www/html"
 }
 }
 }
